@@ -1,0 +1,199 @@
+// .header-container
+//   position: fixed
+//   padding: 16px 30px
+//   width: 100%
+//   background: transparent
+//   display: -webkit-flex
+//   display: -moz-flex
+//   display: -ms-flex
+//   display: -o-flex
+//   display: flex
+//   justify-content: space-between
+//   +transition-property(transform)
+//   +transition-duration(1s)
+//   +translate(0,-100%)
+//   z-index: 11
+//   &.scrolled, &.visible
+//     +translate(0,0)
+//   @media #{$small-only}
+//   @media #{$xxlarge-up}
+//   .logo
+//     width: 70px
+//     line-height: 1
+//     svg
+//       width: 100%
+//       path
+//         +transition(0.5s)
+//       path.heart
+//         transform-origin: center
+//         fill: $pink600
+//       path.outline
+//         fill: white
+//     &:hover
+//       svg
+//         path.heart
+//           animation: heartbeat 1s infinite
+//     @media #{$small-only}
+//       width: 50px
+//   .logo, .right-part
+//     align-self: center
+//   .right-part
+//     margin-left: auto
+//     .small
+//       @extend %istok
+//       color: $brown800
+//       text-transform: uppercase
+//       letter-spacing: 2px
+//       padding: 20px
+//       +transition(0.5s)
+//       @media #{$small-only}
+//         display: none
+//       &:hover
+//         color: $pink600
+
+//   //     H a m b u r g e r
+
+//   .hamburger
+//     margin-left: 4em
+//     .hamburger-box
+//       width: 32px
+//       cursor: pointer
+
+//     .hamburger-inner
+//       width: 100%
+//       border-radius: 0
+//       height: 2px
+//       background: $brown800
+//       &:before, &:after
+//         width: 100%
+//         background: $brown800
+//         height: 2px
+//         border-radius: 0
+
+//     @media #{$large-up}
+//       &.is-active
+//         .hamburger-inner
+//           background: white
+//           &:before, &:after
+//             background: white
+//         &:hover
+//           .hamburger-inner
+//             background: $pink600
+//             &:before, &:after
+//               background: $pink600
+
+
+.header
+  background-color: $white
+  .header-content
+    padding: 0 40px
+    display: flex
+    align-items: center
+    +breakpoint(small only)
+      padding: 0
+    .header-logo
+      flex-grow: 1
+      .logosvg
+        svg
+          height: 50px
+          width: 190px
+    .header-button
+      +breakpoint(small only)
+        display: none
+      a
+        padding: 30px
+          .sub-menu
+            position: relative
+            > ul
+              display: none
+              position: absolute
+              top: 42px
+              left: 0
+              z-index: 501
+              min-width: 200px
+              background-color: #FC5185
+              border-radius: 0 0 5px 5px
+              box-shadow: 1px 1px 2px #7b99bb
+              > li
+                padding: 12px 8px
+                &:last-child
+                  border-radius: 0 0 5px 5px
+                &:hover
+                  background-color: #3FC1C9
+                  padding-left: 15px
+            &:hover ul
+              display: block
+    /// gamburger
+    #nav-icon
+      display: none
+      width: 60px
+      height: 30px
+      position: relative
+      margin: 50px auto
+      -webkit-transform: rotate(0deg)
+      -moz-transform: rotate(0deg)
+      -o-transform: rotate(0deg)
+      transform: rotate(0deg)
+      -webkit-transition: .5s ease-in-out
+      -moz-transition: .5s ease-in-out
+      -o-transition: .5s ease-in-out
+      transition: .5s ease-in-out
+      cursor: pointer
+      span
+        display: block
+        position: absolute
+        height: 3px
+        width: 30%
+        background: $green
+        opacity: 1
+        -webkit-transform: rotate(0deg)
+        -moz-transform: rotate(0deg)
+        -o-transform: rotate(0deg)
+        transform: rotate(0deg)
+        -webkit-transition: .25s ease-in-out
+        -moz-transition: .25s ease-in-out
+        -o-transition: .25s ease-in-out
+        transition: .25s ease-in-out
+        &:nth-child(even)
+          left: 30%
+          border-radius: 0 9px 9px 0
+        &:nth-child(odd)
+          left: 0px
+          border-radius: 9px 0 0 9px
+        &:nth-child(1), &:nth-child(2)
+          top: 0px
+        &:nth-child(3), &:nth-child(4)
+          top: 13px
+        &:nth-child(5), &:nth-child(6)
+          top: 25px
+      &.open span
+        &:nth-child(1), &:nth-child(6)
+          -webkit-transform: rotate(45deg)
+          -moz-transform: rotate(45deg)
+          -o-transform: rotate(45deg)
+          transform: rotate(45deg)
+        &:nth-child(2), &:nth-child(5)
+          -webkit-transform: rotate(-45deg)
+          -moz-transform: rotate(-45deg)
+          -o-transform: rotate(-45deg)
+          transform: rotate(-45deg)
+        &:nth-child(1)
+          left: 11px
+          top: 7px
+        &:nth-child(2)
+          left: calc(50% - 5px)
+          top: 7px
+        &:nth-child(3)
+          left: -50%
+          opacity: 0
+        &:nth-child(4)
+          left: 100%
+          opacity: 0
+        &:nth-child(5)
+          left: 11px
+          top: 20px
+        &:nth-child(6)
+          left: calc(50% - 5px)
+          top: 20px
+      +breakpoint(small only)
+        display: block
