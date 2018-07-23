@@ -13,6 +13,7 @@
 #= require plugins/form
 #= require plugins/jquery.bxslider
 #= require plugins/jquery.scrolldelta
+#= require plugins/slick.min
 #= require plugins/lightgallery.min
 # require plugins/scroll-banner
 #= require plugins/selectize.min
@@ -33,3 +34,4 @@
 #= require tabs
 #= require navigation
 #= require links
+#= require slider

@@ -4,6 +4,8 @@
     padding: 50px
     .description
       .logo
+        +breakpoint(small only)
+          padding: 20px 0 0 20px
         .logosvg
           svg
             height: 55px
@@ -11,12 +13,21 @@
       .description-text
         padding-top: 25px
         line-height: 24px
+        +breakpoint(small only)
+          padding-left: 20px
     .footer-text
       line-height: 34px
       .Company, .Products, .Certificates, .Contacts
         font-size: 14px
         ul
           li
+            &.Products-small
+              line-height: 24px
+              padding: 5px 0
+            &.Company-small
+              +breakpoint(small only)
+              line-height: 24px
+              padding: 5px 0
             a
               cursor: pointer
               position: relative
@@ -34,10 +45,17 @@
                 transform: scaleX(0)
                 -webkit-transition: all 0.3s ease-in-out 0s
                 transition: all 0.3s ease-in-out 0s
-              &:hover:before
-                visibility: visible
-                -webkit-transform: scaleX(1)
-                transform: scaleX(1)
+              &:hover
+                color: $green
+                &:before
+                  visibility: visible
+                  -webkit-transform: scaleX(1)
+                  transform: scaleX(1)
+        &.Contacts
+          +breakpoint(small only)
+            .title
+              padding: 5px 0 20px
+
 
         .title
           color: $graytitle
@@ -69,6 +87,7 @@
     font-size: 16px
     padding: 10px 50px
     background-color: $whitelast
+    color: $graylasttext
     .Private-Enterprise
     .Handcrafted
       display: flex
@@ -77,6 +96,11 @@
           svg
             height: 16px
             width: 20px
+            padding-right: 5px
+            g
+              g
+                path
+                  fill: $graylasttext
     +breakpoint(small only)
       padding: 10px 0
       text-align: center
