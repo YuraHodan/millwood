@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+
   //     c u s t o m     l a b e l s
 
   $('input').blur(function() {
@@ -24,18 +24,18 @@ $(document).ready(function() {
 
   //     v a l i d a t e
 
-  $("form").validate({
-    rules: {
-      name: {
-        required: true,
-        minlength: 3
-      },
-      email: {
-        required: true,
-        email: true
-      }
-    }
-  });
+  // $("form").validate({
+  //   rules: {
+  //     name: {
+  //       required: true,
+  //       minlength: 3
+  //     },
+  //     email: {
+  //       required: true,
+  //       email: true
+  //     }
+  //   }
+  // });
 
 
 
