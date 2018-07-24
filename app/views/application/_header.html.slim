@@ -1,11 +1,11 @@
 .header
   .header-content
     .header-logo
-      .logosvg = inline_svg "photo/svg/millwood-logo.svg"
+      a.logosvg  href=root_path = inline_svg "photo/svg/millwood-logo.svg"
     .header-button#menu
       ul
         li.sub-menu-parent tab-index="0"
-          a.Company.sub-menu-parent Company
+          a.Company.sub-menu-parent href=company_path Company
           ul.sub-menu
             li
               a Who we are
@@ -14,7 +14,7 @@
             li
               a Representative in EU
         li.sub-menu-parent tab-index="0"
-          a.Products.sub-menu-parent Products
+          a.Products.sub-menu-parent href=producters_path Products
         li.sub-menu-parent tab-index="0"
           a.Certificates.sub-menu-parent Certificates
         li.sub-menu-parent tab-index="0"

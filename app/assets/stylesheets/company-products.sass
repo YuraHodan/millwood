@@ -24,7 +24,7 @@
     .columnss
       flex: 25%
       max-width: 25%
-      @media (max-width: 1024px)
+      @media (max-width: 1025px)
         flex: 50%
         max-width: 50%
       .font-columnss
@@ -48,15 +48,30 @@
             height: 100%
         .bg-text-columnss
           display: flex
-          align-items: flex-start
-          // justify-content: center
+          justify-content: flex-start
+          flex-direction: column
           height: 50%
           background-color: $whitelast
+          transition: .4s
+          .read-more
+            margin-top: auto
+            padding: 0 5% 10% 70%
+            display: none
+            font-size: 14px
+            cursor: pointer
+            transition: 1s
+            @media (max-width: 1025px)
+              display: flex
+            .arrow
+              svg
+                height: 10px
           .text-wrapper
-            padding: 0px 30px 25px 60px
-            -webkit-flex: 1
-            flex: 1
-            align-self: center
+            padding: 80px 80px 0px
+            cursor: pointer
+            @media (max-width: 1025px)
+              padding: 40px 40px 0
+            @media (max-width: 769px)
+              padding: 25px 25px 0
             .title
               font-size: 30px
               line-height: 34px
@@ -67,30 +82,28 @@
               font-size: 18px
               color: $graytext
               line-height: 33px
-          &.green
+          &:hover
             background-color: $green
-            color: $white
             .text-wrapper
-              padding: 0px 0px 25px 60px
-            .read-more
-              align-self: flex-end
-              display: flex
-              font-size: 14px
-              padding: 0 40px 40px 0
-              cursor: pointer
-              .arrow
-                svg
-                  height: 10px
-            .title
-              color: $white
+              .title
+                color: $white
             .text
               color: $white
+            .read-more
+              display: flex
+          &.midle
+            @media (max-width: 769px)
+              .text-wrapper
+                .title
+                  font-size: 25px
+                  padding-bottom: 10px
+
   .all-of-company-smole
     display: none
     +breakpoint(small only)
       display: block
       height: 90vh
-      padding-bottom: 50px
+      padding: 55px 0
     .columnss.bg
       height: 100%
       .font-columnss
@@ -98,6 +111,13 @@
         .img-bg
           position: relative
           height: 100%
+          .text-columnss
+            font-size: 36px
+            line-height: 42px
+            color: $green
+            text-align: center
+            padding-top: 20px
+
   .all-of-company-smole-all
     display: none
     +breakpoint(small only)
@@ -115,11 +135,6 @@
         .img-bg
           width: 100%
           position: relative
-          .text-columnss
-            font-size: 36px
-            line-height: 42px
-            color: $green
-            padding: 15%
       &.small
         .font-columnss
           height: 100%
@@ -129,29 +144,32 @@
           height: 100%
           width: 100%
           background-color: $whitelast
+          .read-more
+            align-self: flex-end
+            display: inline-flex
+            cursor: pointer
+            position: relative
+            padding-left: 40%
+            .arrow
+              svg
+                height: 8px
           .text-wrapper
             padding: 10%
+            .read-more
+              .arrow
+                svg
+                  height: 8px
             .title
               font-size: 16px
               color: $green
               font-weight: 400
               padding: 10px 0
             .text
+              // line-height: 18px
               color: $graytext
-          &.green
-            background-color: $green
-            color: $white
-            .text-wrapper
-            .read-more
-              align-self: flex-end
-              display: flex
-              cursor: pointer
-              position: relative
-              right: -60px
-              .arrow
-                svg
-                  height: 10px
-            .title
-              color: $white
-            .text
-              color: $white
+          &.mobile
+            @media (max-width: 769px)
+              .text-wrapper
+                padding: 7%
+                .title
+                  font-size: 14px
