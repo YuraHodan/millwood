@@ -1,0 +1,157 @@
+.company
+  .Breadcrumbs
+    padding: 15px 0 0px 5px
+    display: flex
+    font-size: 14px
+    line-height: 26px
+    .Breadcrumbs-logo
+      .logo
+        svg
+          height: 27px
+    .Breadcrumbs-one, .Breadcrumbs-second
+      cursor: pointer
+      padding-left: 5px
+      transition: .4s
+      &:hover
+        color: $green
+  .all-of-company
+    height: 90vh
+    padding: 0px 15px 60px
+    display: flex
+    flex-wrap: wrap
+    +breakpoint(small only)
+      display: none
+    .columnss
+      flex: 25%
+      max-width: 25%
+      @media (max-width: 1024px)
+        flex: 50%
+        max-width: 50%
+      .font-columnss
+        .img-bg
+          position: relative
+          width: 100%
+          .text-columnss
+            font-size: 36px
+            line-height: 42px
+            color: $green
+            padding: 15%
+      &.bg
+        .font-columnss
+          height: 100%
+          .img-bg
+            height: 100%
+      &.small
+        .font-columnss
+          height: 50%
+          .img-bg
+            height: 100%
+        .bg-text-columnss
+          display: flex
+          align-items: flex-start
+          // justify-content: center
+          height: 50%
+          background-color: $whitelast
+          .text-wrapper
+            padding: 0px 30px 25px 60px
+            -webkit-flex: 1
+            flex: 1
+            align-self: center
+            .title
+              font-size: 30px
+              line-height: 34px
+              color: $green
+              font-weight: 400
+              padding-bottom: 30px
+            .text
+              font-size: 18px
+              color: $graytext
+              line-height: 33px
+          &.green
+            background-color: $green
+            color: $white
+            .text-wrapper
+              padding: 0px 0px 25px 60px
+            .read-more
+              align-self: flex-end
+              display: flex
+              font-size: 14px
+              padding: 0 40px 40px 0
+              cursor: pointer
+              .arrow
+                svg
+                  height: 10px
+            .title
+              color: $white
+            .text
+              color: $white
+  .all-of-company-smole
+    display: none
+    +breakpoint(small only)
+      display: block
+      height: 90vh
+      padding-bottom: 50px
+    .columnss.bg
+      height: 100%
+      .font-columnss
+        height: 100%
+        .img-bg
+          position: relative
+          height: 100%
+  .all-of-company-smole-all
+    display: none
+    +breakpoint(small only)
+      padding-top: 10px
+      display: flex
+      flex-direction: column
+      height: 90vh
+      padding: 0px 15px 60px
+    .columnss
+      display: flex
+      flex: 25%
+      max-width: 100%
+      .font-columnss
+        width: 100%
+        .img-bg
+          width: 100%
+          position: relative
+          .text-columnss
+            font-size: 36px
+            line-height: 42px
+            color: $green
+            padding: 15%
+      &.small
+        .font-columnss
+          height: 100%
+          .img-bg
+            height: 100%
+        .bg-text-columnss
+          height: 100%
+          width: 100%
+          background-color: $whitelast
+          .text-wrapper
+            padding: 10%
+            .title
+              font-size: 16px
+              color: $green
+              font-weight: 400
+              padding: 10px 0
+            .text
+              color: $graytext
+          &.green
+            background-color: $green
+            color: $white
+            .text-wrapper
+            .read-more
+              align-self: flex-end
+              display: flex
+              cursor: pointer
+              position: relative
+              right: -60px
+              .arrow
+                svg
+                  height: 10px
+            .title
+              color: $white
+            .text
+              color: $white
