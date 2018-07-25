@@ -1,0 +1,92 @@
+.whoweare
+  .data-table
+    .title-header
+      text-align: center
+      .title
+        font-size: 36px
+        font-weight: 600
+        color: $graytext
+        padding: 160px 0 20px 0
+        @media screen and (max-width: 1025px)
+          padding: 60px 0 20px 0
+      .smol-title
+        width: 480px
+        margin: 0 auto
+        font-size: 14px
+        line-height: 22px
+        padding-bottom: 45px
+      +breakpoint(small only)
+        .title
+          font-size: 30px
+        .smol-title
+          width: 100%
+    .tables
+      display: flex
+      +breakpoint(small only)
+        flex-direction: column
+      .tables-text
+        flex-basis: auto 3
+        @media screen and (max-width: 768px)
+          width: 70%
+        #customers
+          font-size: 18px
+          td
+            &.first
+              padding: 15px 40px 15px 20px
+              border-right: 2px solid $white
+              +breakpoint(small only)
+                padding: 15px 10px 15px 20px
+            &.second
+              padding: 15px 40px 15px 20px
+              color: $green
+              +breakpoint(small only)
+                padding: 15px 5px 15px 20px
+          tr
+            background-color: $whitelast
+            &:nth-child(even)
+              background-color: $white
+            // &:hover
+            //   background-color: $whitelast
+      .photo
+        flex-basis: auto 1
+        +breakpoint(small only)
+          padding-bottom: 50px
+        @media screen and (max-width: 768px)
+          width: 40%
+        .photo-wrapper
+          height: 50%
+          +breakpoint(small only)
+            height: 300px
+          .img-bg
+            position: relative
+            height: 100%
+            width: 50%
+            @media screen and (max-width: 768px)
+              width: 100%
+        .text-photo
+          height: 50%
+          width: 50%
+          text-align: center
+          background-color: $whitelast
+          padding-top: 40px
+          @media screen and (max-width: 768px)
+            width: 100%
+          +breakpoint(small only)
+            padding-bottom: 50px
+          .title
+            font-size: 16px
+            font-weight: 600
+            color: $graytext
+            padding-bottom: 30px
+          .text
+            padding: 0 15px
+            font-size: 14px
+            line-height: 17px
+  .lower-image-wrapper
+    +breakpoint(small only)
+      display: none
+    .lower-image
+      height: 270px
+      .img-bg
+        position: relative
+        height: 100%

@@ -5,3 +5,80 @@
     height: 100%
 ul
   list-style: none
+
+.slider
+  .mainlidet
+    .slick-list
+      .slick-track
+        li
+          height: 95vh
+          +breakpoint(small only)
+            height: 90vh
+    .slick-dots
+      display: flex
+      bottom: 50px
+      left: 45%
+      margin: 0
+      position: absolute
+      align-items: center
+      @media screen and (max-width: 768px)
+        left: 42%
+      +breakpoint(small only)
+        left: 35%
+      @media screen and (max-width: 320px)
+        left: 30%
+      li
+        height: 2vh
+        display: inline-block
+        padding: 3px
+      button
+        display: block
+        width: 20px
+        height: 2px
+        padding: 0
+        border: none
+        background-color: $white
+        opacity: 0.5
+        text-indent: -999999px
+      li.slick-active button
+        background-color: $white
+        opacity: 1
+        padding: 0
+    .img-bg
+      display: flex
+      align-items: center
+      justify-content: center
+      .slider-text
+        margin-bottom: 120px
+        @media screen and (max-width: 768px)
+          margin-right: -65px
+        .logo
+          svg
+            height: 50px
+            width: 190px
+        .tex-logo
+          padding-top: 10px
+          width: 360px
+          font-size: 50px
+          line-height: 54px
+          font-weight: 800
+          color: white
+          text-shadow: 3px 3px 6px rgba(0,0,0,0.5)
+        +breakpoint(small only)
+          margin: 0
+          display: flex
+          align-items: center
+          justify-content: center
+          flex-direction: column
+          margin-bottom: 110px
+          .tex-logo
+            text-align: center
+            width: 100%
+            font-size: 30px
+            line-height: 40px
+          .logo
+            svg
+              height: 45px
+              width: 190px
+  .goode2-slider-nav
+    z-index: 5
