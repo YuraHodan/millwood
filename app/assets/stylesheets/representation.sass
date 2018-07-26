@@ -1,0 +1,54 @@
+.whoweare
+  .Contact-us
+    height: 83vh
+    .img-bg
+      position: relative
+      height: 83vh
+      .form-wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        .Contact-us-title
+          color: $white
+          font-size: 36px
+          padding: 95px 0 30px 0
+        .contact-us-wrap
+          .form-container
+            .inner-form
+              .text-input
+                display: flex
+                justify-content: center
+                align-items: center
+                @media screen and (max-width: 1025px)
+                  display: block
+                .input-field
+                  padding: 15px
+                  +breakpoint(small only)
+                  input::placeholder
+                    color: $green
+                  input
+                    border: 0
+                    padding: 25px
+                    +breakpoint(small only)
+                      padding: 25px
+              .input-field
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 15px 15px 35px
+                textarea::placeholder
+                  color: $green
+                textarea
+                  border: 0
+                  padding: 25px
+                  width: 100%
+              button
+                color: $white
+                font-size: 18px
+                background-color: $green
+                padding: 25px 80px
+  .text-wrapper
+    padding-bottom: 50px
+    .tex-about
+      z-index: -1

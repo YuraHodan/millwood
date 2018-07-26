@@ -18,6 +18,7 @@
 # require plugins/scroll-banner
 #= require plugins/selectize.min
 #= require plugins/parallax.min
+#= require plugins/jquery.form.min
 
 #     I N I T I A L I Z E
 
@@ -35,3 +36,4 @@
 #= require navigation
 #= require links
 #= require slider
+#= require jquery_form

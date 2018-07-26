@@ -1,0 +1,62 @@
+.whoweare
+  .large-6.columns.medium-10
+    .Breadcrumbs
+      .Breadcrumbs-logo
+        .logo = inline_svg "photo/svg/Millwood-home_breadcrumbs.svg"
+      a.Breadcrumbs-one href=root_path
+        p Home /
+      a.Breadcrumbs-second href=company_path
+        p   Company /
+      .Breadcrumbs-second href=representative_path
+        p Representative in EU
+  .whoweare-bg
+    .large-12.columns.medium-12
+      .large-5.columns.medium-6.small-12.nopadding-ri.float-left
+        .text-wrapper
+          .tex-about
+            .logo-wrapper
+                .logo = inline_svg "photo/svg/logogrey.svg"
+                .logo2 = inline_svg "photo/svg/logogrey.svg"
+            .title.reprezentative Representative in EU
+            .text
+                p Потрібен текст! Millwood began its operations as a wood processing company in Vyhoda village, Western Ukraine in 2011. Since then, the company has built a solid reputation founded on trust, service and quality. Millwood specializes in manufacturing a wide range of sawn and construction timber from spruce and fir. Timber comes from sustainable forests of the Carpathian region and certified by FSC. We have our own forest harvesting crew and all the necessary equipment for harvesting and transportation logs. Cutting-edge processing techniques and engineering are opening up and ever greater number of new ways for wood usage, in both architecture and construction.
+      .large-7.columns.medium-6.small-12.float-right
+        .title-about
+        .Contact-us
+          .img-bg style="background-image: url(#{asset_path('photo/img/Representative_.jpg')})"
+            .form-wrapper
+              .Contact-us-title Contact us:
+
+
+              .contact-us-wrap#contact-us
+                .form-container
+                  .inner-form
+                    form.ajax-form action="/reserve" method="post" enctype="multipart/form-data"
+                      .text-input
+                        .input-field.smole
+                          input#name.smole name="firstname" type="text" required="" placeholder="Name:"
+                        .input-field
+                          input#mail name="mail" type="text" required="" placeholder="E-mail:"
+                      .input-field
+                        textarea#comment rows="13" name="comment" placeholder="Message:"
+                      .input-field
+                        button type="submit" SEND MESSAGE
+
+
+
+
+
+
+
+
+
+
+      / .large-5.columns.medium-6.small-12.nopadding-ri.float-right
+      /   .text-wrapper
+      /     .tex-about
+      /       .logo-wrapper
+      /           .logo = inline_svg "photo/svg/logogrey.svg"
+      /           .logo2 = inline_svg "photo/svg/logogrey.svg"
+      /       .title Representative in EU
+      /       .text
+      /           p Потрібен текст! Millwood began its operations as a wood processing company in Vyhoda village, Western Ukraine in 2011. Since then, the company has built a solid reputation founded on trust, service and quality. Millwood specializes in manufacturing a wide range of sawn and construction timber from spruce and fir. Timber comes from sustainable forests of the Carpathian region and certified by FSC. We have our own forest harvesting crew and all the necessary equipment for harvesting and transportation logs. Cutting-edge processing techniques and engineering are opening up and ever greater number of new ways for wood usage, in both architecture and construction.

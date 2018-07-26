@@ -45,6 +45,8 @@
         width: 110%
         position: relative
         .logo-wrapper
+          +breakpoint(small only)
+            display: none
           .logo, .logo2
             right: 10px
             opacity: 0.5
@@ -87,6 +89,10 @@
           .title
             display: none
             padding-bottom: 20px
+            &.reprezentative
+              display: block
+              font-size: 30px
+              padding: 5px
           .text
             font-size: 14px
             line-height: 25px
