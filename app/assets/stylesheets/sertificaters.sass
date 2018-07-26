@@ -1,0 +1,81 @@
+.sertificaters
+  padding-bottom: 50px
+  .Breadcrumbs
+    padding: 15px 0 0px 5px
+    display: flex
+    font-size: 14px
+    line-height: 26px
+    color: $graylasttext
+    .Breadcrumbs-logo
+      .logo
+        svg
+          height: 27px
+    .Breadcrumbs-one, .Breadcrumbs-second
+      cursor: pointer
+      padding-left: 5px
+      transition: .4s
+      &:hover
+        color: $green
+  .sertificaters-all
+    .title-wrapper
+      .title-bg
+        text-align: center
+        font-size: 45px
+        color: $green
+        line-height: 42px
+        +breakpoint(small only)
+          padding-bottom: 50px
+    .wrapper-sertificaters
+      display: flex
+      justify-content: center
+      +breakpoint(small only)
+        display: none
+      .all-sertificaters
+        display: flex
+        flex-wrap: wrap
+        .one-sertificaters
+          height: 60vh
+          padding: 30px 30px 0 30px
+          transition: all .5s ease-in-out 0s
+          .img-bg
+            height: 70%
+            position: relative
+            background-size: contain
+          &:hover
+            -webkit-transform: scale(1.4)
+            -ms-transform: scale(1.4)
+            transform: scale(1.4)
+          .text-sertificaters
+            text-align: center
+            padding-top: 30px
+            width: 280px
+            margin: 0 auto
+            .title
+              font-size: 22px
+              line-height: 34px
+              padding-bottom: 10px
+              color: $green
+            .text
+              font-size: 14px
+              line-height: 20px
+      @media screen and (max-width: 1025px)
+        .all-sertificaters
+          .one-sertificaters
+            height: 60vh
+            padding: 20px
+            .img-bg
+              height: 60%
+            &:hover
+              -webkit-transform: scale(1)
+              -ms-transform: scale(1)
+              transform: scale(1)
+            .text-sertificaters
+              padding-top: 0px
+  .lower-image-wrapper
+    +breakpoint(small only)
+      display: none
+    .lower-image
+      height: 270px
+      .img-bg
+        position: relative
+        height: 100%

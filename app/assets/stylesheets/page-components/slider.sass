@@ -82,3 +82,74 @@ ul
               width: 190px
   .goode2-slider-nav
     z-index: 5
+
+
+
+
+.slider2
+  display: none
+  +breakpoint(small only)
+    display: block
+  .mainlidet2
+    .next-btn-wrapper,.prev-btn-wrapper
+      position: relative
+      .next-btn, .prev-btn
+        position: absolute
+        z-index: 2
+        top: 165px
+        svg
+          width: 35px
+      .prev-btn
+        left: -10px
+        transform: rotate(90deg)
+      .next-btn
+        right: -10px
+        transform: rotate(-90deg)
+    .slick-list
+      .slick-track
+        li
+          height: 90vh
+          width: 80%
+          .one-sertificaters
+            height: 100%
+            .img-bg
+              height: 70%
+              position: relative
+              background-size: contain
+            .text-sertificaters
+              text-align: center
+              padding-top: 30px
+              width: 280px
+              margin: 0 auto
+              .title
+                font-size: 22px
+                line-height: 34px
+                padding-bottom: 10px
+                color: $green
+              .text
+                font-size: 14px
+                line-height: 20px
+    .slick-dots
+      display: flex
+      margin: 0
+      position: absolute
+      align-items: center
+      bottom: 15px
+      right: 26%
+      li
+        height: 2vh
+        display: inline-block
+        padding: 3px 8px
+      button
+        display: block
+        width: 30px
+        height: 3px
+        padding: 0
+        border: none
+        background-color: $green
+        opacity: 0.5
+        text-indent: -999999px
+      li.slick-active button
+        background-color: $green
+        opacity: 1
+        padding: 0

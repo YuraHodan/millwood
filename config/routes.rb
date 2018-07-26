@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get "locations", action: "locations"
     get "productkvh", action: "productkvh"
     get "oneproducterssawn", action: "oneproducterssawn"
+    get "sertificaters", action: "sertificaters"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]
