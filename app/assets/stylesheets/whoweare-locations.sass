@@ -41,9 +41,12 @@
         background-color: $whitelast
         display: flex
         flex-direction: column
-        padding: 95px 170px 0 80px
+        // padding: 95px 170px 0 80px
         width: 110%
+        padding: 18% 30% 0 15%
         position: relative
+        @media screen and (max-width: 1366px)
+          height: 120vh
         .logo-wrapper
           +breakpoint(small only)
             display: none
@@ -107,5 +110,7 @@
         .slick-track
           li
             height: 83vh
+            @media screen and (max-width: 1366px)
+              height: 120vh
             +breakpoint(small only)
               height: 68vh
