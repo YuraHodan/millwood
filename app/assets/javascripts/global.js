@@ -25,7 +25,6 @@ $( "#nav-icon" ).click(function() {
 
 
 
-
 // var colors = new Array(
 //   // [243, 243, 243],
 //   // [242, 242, 242],
