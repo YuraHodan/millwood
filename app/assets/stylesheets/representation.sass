@@ -38,12 +38,15 @@
                   flex-direction: column
                 .input-field
                   padding: 15px
-                  +breakpoint(small only)
                   input::placeholder
                     color: $green
                   input
                     border: 0
                     padding: 25px
+                    +breakpoint(small only)
+                      width: 300px
+                    @media screen and (max-width: 321px)
+                      width: 200px
               .input-field
                 display: flex
                 justify-content: center
@@ -56,8 +59,9 @@
                   padding: 25px
                   width: 100%
                   +breakpoint(small only)
-                    width: auto
-                    padding: 45px
+                    width: 300px
+                  @media screen and (max-width: 321px)
+                    width: 200px
               button
                 color: $white
                 font-size: 18px
