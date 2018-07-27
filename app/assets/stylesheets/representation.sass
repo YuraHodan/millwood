@@ -1,9 +1,23 @@
 .whoweare
+  .content-wrapper
+    .contact-table
+      tr
+        td
+          padding: 30px 30px 0 0
+          line-height: 33px
+          color: $green
+          svg
+            height: 16px
+            width: 16px
   .Contact-us
     height: 83vh
+    +breakpoint(small only)
+      height: auto
     .img-bg
       position: relative
       height: 83vh
+      +breakpoint(small only)
+        height: auto
       .form-wrapper
         display: flex
         justify-content: center
@@ -31,7 +45,7 @@
                     border: 0
                     padding: 25px
                     +breakpoint(small only)
-                      padding: 25px
+                      padding: 10px
               .input-field
                 display: flex
                 justify-content: center

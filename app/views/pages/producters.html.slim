@@ -15,8 +15,8 @@
             .text-columnss
               p Our Products
       .columnss.small
-        .bg-text-columnss.midle
-          a.text-wrapper href=oneproducterssawn_path
+        a.bg-text-columnss.midle href=oneproducterssawn_path
+          .text-wrapper
             .title Sawn Timber
             .text
               p Sawn timber is the basic product produced from log wood through processing in the sawmill
@@ -43,8 +43,8 @@
             .text
               p Planed product provides the special atmosphere of comfort, warmth and elegance into the house.
           .read-more
-            .text read more
-            .arrow = inline_svg "photo/svg/arrowright.svg"
+            / .text read more
+            / .arrow = inline_svg "photo/svg/arrowright.svg"
         .font-columnss
           .img-bg style="background-image: url(#{asset_path('photo/img/planedproducts.jpg')})"
 
@@ -65,7 +65,7 @@
             .text
               p Sawn timber is the basic product produced from log wood through processing in the sawmill
           .read-more
-            a.text read more
+            a.text href=oneproducterssawn_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
       .columnss.small
         .bg-text-columnss.mobile
@@ -74,7 +74,7 @@
             .text
               p KVH has become an indispensable material for modern wood construction
           .read-more
-            a.text read more
+            a.text href=productkvh_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
         .font-columnss
           .img-bg style="background-image: url(#{asset_path('photo/img/kvh_small.jpg')})"
@@ -87,5 +87,5 @@
             .text
               p Planed product provides the special atmosphere of comfort, warmth and elegance into the house.
           .read-more
-            a.text read more
-            .arrow = inline_svg "photo/svg/arrowright.svg"
+            / a.text read more
+            / .arrow = inline_svg "photo/svg/arrowright.svg"

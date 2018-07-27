@@ -5,10 +5,8 @@
         .logo = inline_svg "photo/svg/Millwood-home_breadcrumbs.svg"
       a.Breadcrumbs-one href=root_path
         p Home /
-      a.Breadcrumbs-second href=company_path
-        p   Company /
-      .Breadcrumbs-second href=representative_path
-        p Representative in EU
+      a.Breadcrumbs-second
+        p Contacts
   .whoweare-bg
     .large-12.columns.medium-12
       .large-5.columns.medium-6.small-12.nopadding-ri.float-left
@@ -17,9 +15,21 @@
             .logo-wrapper
                 .logo = inline_svg "photo/svg/logogrey.svg"
                 .logo2 = inline_svg "photo/svg/logogrey.svg"
-            .title.reprezentative Representative in EU
-            .text
-                p Потрібен текст! Millwood began its operations as a wood processing company in Vyhoda village, Western Ukraine in 2011. Since then, the company has built a solid reputation founded on trust, service and quality. Millwood specializes in manufacturing a wide range of sawn and construction timber from spruce and fir. Timber comes from sustainable forests of the Carpathian region and certified by FSC. We have our own forest harvesting crew and all the necessary equipment for harvesting and transportation logs. Cutting-edge processing techniques and engineering are opening up and ever greater number of new ways for wood usage, in both architecture and construction.
+            .title.reprezentative Contacts
+            .content-wrapper
+              table.contact-table
+                tr
+                  td = inline_svg "photo/svg/phone.svg"
+                  td
+                    | +380 34 776 1135
+                    br
+                    |+380 50 373 0203
+                tr
+                  td = inline_svg "photo/svg/mail.svg"
+                  td millwod@gmail.com
+                tr
+                  td = inline_svg "photo/svg/location.svg"
+                  td Millwood Ukraine 4 Zavodska str., Vyhoda, Ivano-Frankivsk region, Ukraine, 77552
       .large-7.columns.medium-6.small-12.float-right
         .title-about
         .Contact-us

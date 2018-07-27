@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     get "oneproducterssawn", action: "oneproducterssawn"
     get "sertificaters", action: "sertificaters"
     get "representative", action: "representative"
+    get "contacts", action: "contacts"
     post "reserve", action: "reserve"
   end
 
