@@ -38,14 +38,14 @@
                   display: block
                 .input-field
                   padding: 15px
+                  +breakpoint(small only)
                   input::placeholder
                     color: $green
                   input
                     border: 0
                     padding: 25px
-                  +breakpoint(small only)
-                    input
-                      width: 100%
+                    +breakpoint(small only)
+                      padding: 10px
               .input-field
                 display: flex
                 justify-content: center
@@ -57,9 +57,6 @@
                   border: 0
                   padding: 25px
                   width: 100%
-                +breakpoint(small only)
-                  padding: 0
-                  textarea
               button
                 color: $white
                 font-size: 18px
