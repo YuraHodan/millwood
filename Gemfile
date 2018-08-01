@@ -45,19 +45,19 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'slim-rails'
+gem 'slim-rails', '3.1.1'
 
 gem 'bower-rails'
 
 gem "protected_attributes"
 
-# gem 'rails_admin'
+gem 'rails_admin'
 # gem 'rails_admin_nestable'
 
-# gem 'devise'
+gem 'devise'
 
 gem 'enumerize'
-
+gem 'carrierwave', '~> 1.0'
 # gem 'ckeditor'
 
 # gem 'paperclip'
@@ -94,3 +94,5 @@ gem 'kaminari'
 gem 'thin'
 
 gem 'puma'
+
+
