@@ -37,13 +37,21 @@ RailsAdmin.config do |config|
     ## With an audit adapter, you can add:
     # history_index
     # history_show
-   config.included_models = [MainSlider]
+   config.included_models = [MainSlider,Sawntimber]
 
     config.model MainSlider do
       navigation_label "dajsklfsldjflksjdflksdf}"
       label "Слайдер"
-      include_fields :image, :show
+      include_fields :image, :show, :title
     end
 
+    config.model Sawntimber do
+      navigation_label "Products"
+      label "Sawntimber"
+      include_fields :title,  :title_description, :main_image, :product_title,
+      :product_description, :thickness, :width, :length, :wood_species,
+      :surface, :moisture_content, :grades_strenght, :packing, :produced_by,
+      :table_image, :table_image_title, :table_image_description
+    end
   end
 end
