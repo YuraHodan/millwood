@@ -3,38 +3,12 @@
     .mainlidet.goode2
       ul.goode2-slider-for
       ul.goode2-slider-nav
-        li
-            .img-bg style="background-image: url(#{asset_path('photo/img/MainBanner.jpg')})"
-              .slider-text
-                .logo
-                  .logosvg = inline_svg "photo/svg/LogoWhiteMain.svg"
-                .tex-logo
-                  | From forest to buildings
-        li
-            .img-bg style="background-image: url(#{asset_path('photo/img/location.jpg')})"
-              .slider-text
-                .logo
-                  .logosvg = inline_svg "photo/svg/LogoWhiteMain.svg"
-                .tex-logo
-                  | From forest to buildings
-        li
-            .img-bg style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
-              .slider-text
-                .logo
-                  .logosvg = inline_svg "photo/svg/LogoWhiteMain.svg"
-                .tex-logo
-                  | From forest to buildings
-        li
-            .img-bg style="background-image: url(#{asset_path('photo/img/location.jpg')})"
-              .slider-text
-                .logo
-                  .logosvg = inline_svg "photo/svg/LogoWhiteMain.svg"
-                .tex-logo
-                  | From forest to buildings
-        li
-            .img-bg style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
-              .slider-text
-                .logo
-                  .logosvg = inline_svg "photo/svg/LogoWhiteMain.svg"
-                .tex-logo
-                  | From forest to buildings
+        -@slider_images.each do |slide|
+          li
+              .img-bg style="background-image: url(#{slide.image})"
+                .slider-text
+                  .logo
+                    .logosvg = inline_svg "photo/svg/LogoWhiteMain.svg"
+                  .tex-logo
+                    =slide.title
+

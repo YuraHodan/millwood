@@ -42,7 +42,7 @@ RailsAdmin.config do |config|
     config.model MainSlider do
       navigation_label "dajsklfsldjflksjdflksdf}"
       label "Слайдер"
-      include_fields :image, :show
+      include_fields :image, :show, :title
     end
 
   end
