@@ -256,7 +256,6 @@ DEPENDENCIES
   ffaker
   inline_svg
   jbuilder (~> 2.0)
-  jquery-rails
   kaminari
   placeholdit
   pluck_to_hash

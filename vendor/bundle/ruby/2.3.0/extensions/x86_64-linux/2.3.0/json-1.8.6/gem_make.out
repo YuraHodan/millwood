@@ -1,0 +1,13 @@
+current directory: /home/snizhok/Desktop/Projects/millwood/millwood/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+/usr/bin/ruby2.3 -r ./siteconf20180803-3339-bi9bgf.rb extconf.rb
+creating Makefile
+
+current directory: /home/snizhok/Desktop/Projects/millwood/millwood/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/snizhok/Desktop/Projects/millwood/millwood/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/snizhok/Desktop/Projects/millwood/millwood/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install

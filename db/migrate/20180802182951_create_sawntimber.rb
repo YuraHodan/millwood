@@ -3,7 +3,6 @@ class CreateSawntimber < ActiveRecord::Migration
     create_table :sawntimbers do |t|
       t.string :title
       t.text   :title_description
-      t.string :main_image
       t.string :product_title
       t.text   :product_description
       t.string :thickness
