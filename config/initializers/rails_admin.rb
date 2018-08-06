@@ -66,11 +66,11 @@ RailsAdmin.config do |config|
       label "Слайдер"
       include_fields :image, :show
     end
-    
+
     config.model WhoWeAre do
       navigation_label "info"
       label "Who we are"
-      include_fields :title, :description, :image
+      include_fields :title, :description
     end
 
     config.model Location do
@@ -83,9 +83,9 @@ RailsAdmin.config do |config|
       navigation_label "Information"
       label "KVH"
       include_fields :title, :title_description, :product_title,
-      :product_description, :wood_species, :manufacture, 
-      :sorting, :grading_category, :gluing, :quality, :packaging, 
-      :lenght, :monitoring, :table_image, :table_image_title, :table_image_description      
+      :product_description, :wood_species, :manufacture,
+      :sorting, :grading_category, :gluing, :quality, :packaging,
+      :lenght, :monitoring, :table_image, :table_image_title, :table_image_description
     end
 
 
