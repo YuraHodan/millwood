@@ -9,29 +9,32 @@
         p  Certificates
   .sertificaters-all
     .large-12.columns.medium-12
-      .title-wrapper
-        .title-bg Certificates
+      .title-wrapper 
+        .title-bg
+         = @sertificate.main_title
     .large-12.columns.medium-12
       .wrapper-sertificaters
         .all-sertificaters
           .one-sertificaters
-            .img-bg style="background-image: url(#{asset_path('photo/img/sertifikat_smk_2016_rus_1.jpg')})"
+            .img-bg style="background-image: url(#{@sertificate.left_image})"
             .text-sertificaters
-              .title FSC
+              .title
+               = @sertificate.left_title
               .text
-                p The Forest Stewardship Council
+                = @sertificate.left_description
           .one-sertificaters
-            .img-bg style="background-image: url(#{asset_path('photo/img/sertifikat_smk_2016_rus_1.jpg')})"
+            .img-bg style="background-image: url(#{@sertificate.cenre_image})"
             .text-sertificaters
-              .title EN 15497
+              .title
+                = @sertificate.centre_title
               .text
-                p Structural finger jointed Solid Timber + DoP Declaration of Perfomance
+                = @sertificate.centre_description
           .one-sertificaters
-            .img-bg style="background-image: url(#{asset_path('photo/img/sertifikat_smk_2016_rus_1.jpg')})"
+            .img-bg style="background-image: url(#{@sertificate.right_image})"
             .text-sertificaters
-              .title EN 15497
+              .title
+                = @sertificate.right_title
               .text
-                p Material for modern wood construction
   .lower-image-wrapper.columns.nopadding
       .lower-image
         .img-bg style="background-image: url(#{asset_path('photo/img/bgproduct1_.png')})"
