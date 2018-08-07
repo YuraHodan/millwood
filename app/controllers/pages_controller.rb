@@ -27,11 +27,16 @@
 
  def oneproducterssawn
  	@sawntimber = Sawntimber.first_or_initialize
- 	@sawmtimber_slider = SawntimberSlider.all.show 
+ 	@sawmtimber_slider = SawntimberSlider.all.show
  end
 
  def company
  	@company = Company.first_or_initialize
  end
 
+ def reserve
+  # binding.pry
+   # Message.create(name: params[:name],email: params[:email],message: params[:message])
+  render json: {}
+ end
 end

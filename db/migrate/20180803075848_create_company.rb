@@ -11,7 +11,7 @@ class CreateCompany < ActiveRecord::Migration
     	t.string :middle_image
     	t.string :right_image
     	t.string :right_title
-    	t.text   :right_descritpion
+    	t.text   :right_description
     end
   end
 end

@@ -77,6 +77,9 @@ gem 'faker'
 gem 'quiet_assets'
 
 gem 'kaminari'
+gem 'pry-rails', '~> 0.3.4'
+# gem 'require_reloader'
+gem 'pry'
 
 # gem "htmlcompressor"
 # gem 'rack-page_caching'

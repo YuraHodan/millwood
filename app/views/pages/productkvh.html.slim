@@ -20,16 +20,9 @@
           .mainlidet.goode2
             ul.goode2-slider-for
             ul.goode2-slider-nav
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/img/kvh_slider.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/img/Sawn_timber_slider.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/img/location.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
+              -@kvh_slider.each do|slide|
+                li
+                    .img-bg style="background-image: url(#{slide.image.url})"
       .large-5.columns.medium-6.small-12.nopadding-ri.float-left
         .text-wrapper
           .tex-about
@@ -43,7 +36,7 @@
     .large-12.columns.medium-12
       .title-header
         .title =@kvh.product_title
-          p 
+          p
           =@kvh.product_description
     .large-10.columns.medium-12.centered
       .tables

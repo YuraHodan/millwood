@@ -59,7 +59,7 @@ RailsAdmin.config do |config|
       navigation_label "About us"
       label "Company"
       include_fields :main_title, :main_image, :left_image, :left_title, :title_description, :middle_title,
-      :middle_description, :middle_image, :right_image, :right_title, :right_descritpion
+      :middle_description, :middle_image, :right_image, :right_title, :right_description
     end
 
     config.model SawnSlider do
