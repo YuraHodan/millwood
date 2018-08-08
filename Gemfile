@@ -97,8 +97,3 @@ gem 'pry'
 gem 'thin'
 
 gem 'puma'
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 903d129c199b976bd4150be49d3f534c0c13b1a9
