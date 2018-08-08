@@ -34,7 +34,7 @@
  	@company = Company.first_or_initialize
  end
 
- def reserve
+ def message
   # binding.pry
    # Message.create(name: params[:name],email: params[:email],message: params[:message])
   render json: {}

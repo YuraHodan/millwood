@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     get "sertificaters", action: "sertificaters"
     get "representative", action: "representative"
     get "contacts", action: "contacts"
-    post "reserve", action: "reserve"
+    post "message", action: "message"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]
