@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-# gem 'jquery-rails'
+#gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -45,19 +45,19 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'slim-rails'
+gem 'slim-rails', '3.1.1'
 
 gem 'bower-rails'
 
 gem "protected_attributes"
 
-# gem 'rails_admin'
+gem 'rails_admin'
 # gem 'rails_admin_nestable'
 
-# gem 'devise'
+gem 'devise'
 
 gem 'enumerize'
-
+gem 'carrierwave', '~> 1.0'
 # gem 'ckeditor'
 
 # gem 'paperclip'
@@ -77,6 +77,9 @@ gem 'faker'
 gem 'quiet_assets'
 
 gem 'kaminari'
+gem 'pry-rails', '~> 0.3.4'
+# gem 'require_reloader'
+gem 'pry'
 
 # gem "htmlcompressor"
 # gem 'rack-page_caching'
@@ -94,3 +97,8 @@ gem 'kaminari'
 gem 'thin'
 
 gem 'puma'
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 903d129c199b976bd4150be49d3f534c0c13b1a9

@@ -1,0 +1,24 @@
+language: ruby
+sudo: false
+services:
+  - mongodb
+gemfile:
+  - Gemfile
+  - Gemfile.rails42
+  - Gemfile.mongo_mapper
+rvm:
+  - 2.2.6
+  - 2.3.3
+  - ruby-head
+  - jruby-9.1.6.0
+matrix:
+  allow_failures:
+    - gemfile: Gemfile.rails42
+      rvm: ruby-head
+    - gemfile: Gemfile.mongo_mapper
+      rvm: ruby-head
+branches:
+  only:
+    - master
+notifications:
+  email: false

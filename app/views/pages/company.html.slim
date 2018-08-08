@@ -11,39 +11,39 @@
     .all-of-company
       .columnss.bg
         .font-columnss
-          .img-bg style="background-image: url(#{asset_path('photo/img/company.jpg')})"
+          .img-bg style="background-image: url(#{@company.main_image})"
             .text-columnss
-              p Company
+              p =@company.main_title
       .columnss.small
         .font-columnss
-          .img-bg style="background-image: url(#{asset_path('photo/img/whoweare_small.jpg')})"
+          .img-bg style="background-image: url(#{@company.left_image})"
         a.bg-text-columnss href=whoweare_path
           .text-wrapper
-            .title Who we are
+            .title =@company.left_title
             .text
-              p Millwood specializes in manufacturing a wide range of sawn timber
+              p =@company.title_description
           .read-more
             .text read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
       .columnss.small
         a.bg-text-columnss href=locations_path
           .text-wrapper
-            .title Location
+            .title =@company.middle_title
             .text
-              p The geographical location is advantage for the sawmill company
+              p =@company.middle_description
           .read-more
             .text read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
         .font-columnss
-          .img-bg style="background-image: url(#{asset_path('photo/img/location.jpg')})"
+          .img-bg style="background-image: url(#{@company.middle_image})"
       .columnss.small
         .font-columnss
-          .img-bg style="background-image: url(#{asset_path('photo/img/representative_small.jpg')})"
+          .img-bg style="background-image: url(#{@company.right_image})"
         a.bg-text-columnss href=representative_path
           .text-wrapper
-            .title Representative in EU
+            .title =@company.right_title
             .text
-              p Потрібен текст! Planed product provides the special elegance into the house.
+              p =@company.right_description
           .read-more
 
             .text read more

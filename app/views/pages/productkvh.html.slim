@@ -20,69 +20,62 @@
           .mainlidet.goode2
             ul.goode2-slider-for
             ul.goode2-slider-nav
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/img/kvh_slider.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/img/Sawn_timber_slider.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/img/location.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
+              -@kvh_slider.each do|slide|
+                li
+                    .img-bg style="background-image: url(#{slide.image.url})"
       .large-5.columns.medium-6.small-12.nopadding-ri.float-left
         .text-wrapper
           .tex-about
             .logo-wrapper
                 .logo = inline_svg "photo/svg/logogrey.svg"
                 .logo2 = inline_svg "photo/svg/logogrey.svg"
-            .title Structural finger jointed Solid Timber (KVH)
+            .title = @kvh.title
             .text
-                p Solid structural timber is a material that is specifically developed for the high requirements modern wood construction. It is a technically dried, strength-graded and finger-jointed solid softwood timber product. The production process starts with drying of spruce timber to a moisture content (15% +/-3%). The wood defects such as large knots or wane, labeled and excluded. Sorting is done first in order to achieve a certain level of strength. At the ends of the different length of the segments of slats finger joint profile, and then lamellas are glued to each other under pressure. After curing of the adhesive a ready-made timber planed on all four sides.
+                =@kvh.title_description
   .data-table
     .large-12.columns.medium-12
       .title-header
-        .title Product description
-        .smol-title
-          p We offer highly accurate size tolerances of sawn timber from log wood through processing in the sawmill.
+        .title =@kvh.product_title
+          p
+          =@kvh.product_description
     .large-10.columns.medium-12.centered
       .tables
         .tables-text
           table#customers
             tr
               td.first Wood species:
-              td.second Spruce/fir
+              td.second =@kvh.wood_species
             tr
               td.first Manufacture:
-              td.second according to EN 15497:2014
+              td.second =@kvh.manufacture
             tr
               td.first Sorting:
-              td.second visual, according to EN 14081-1
+              td.second =@kvh.sorting
             tr
               td.first Grading category:
-              td.second S10, C24
+              td.second =@kvh.grading_category
             tr
               td.first Gluing:
-              td.second adhesives type 1 EPI
+              td.second =@kvh.gluing
             tr
               td.first Quality:
-              td.second non-visible quality, planed and chamfered
+              td.second =@kvh.quality
             tr
               td.first Packaging:
-              td.second Bundle in light proof foil
+              td.second =@kvh.packaging
             tr
               td.first Length:
-              td.second 13 m
+              td.second =@kvh.lenght
             tr
               td.first Monitoring:
-              td.second Timber Research and Development Institute Praha (Czech Republic)
+              td.second =@kvh.monitoring
         .photo
           .photo-wrapper
-            .img-bg style="background-image: url(#{asset_path('photo/img/opg.jpg')})"
+            .img-bg style="background-image: url(#{@kvh.table_image})"
           .text-photo
-            .title We offer highly
+            .title =@kvh.table_image_title
             .text
-              p We offer highly accurate size tolerances of sawn timber from log wood through processing in the sawmill.
+              p =@kvh.table_image_description
   .lower-image-wrapper.columns.nopadding
       .lower-image
         .img-bg style="background-image: url(#{asset_path('photo/img/bgproduct1_.png')})"
