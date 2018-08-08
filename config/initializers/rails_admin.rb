@@ -38,17 +38,17 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
    config.included_models = [MainSlider,Sawntimber,Company,SawnSlider,WhoWeAre,Location,Kvh,WhoWeAreSlider,
-    KvhSlider,Certificates]
+    KvhSlider,Certificates,OurProducts,Contacts,Representative]
 
     config.model MainSlider do
       navigation_label "Main Slider"
-      label "Слайдер"
+      label "Slider"
       include_fields :image, :show, :title
     end
 
     config.model Sawntimber do
-      navigation_label "Products"
-      label "Sawntimber"
+      navigation_label "Sawntimber"
+      label "Product"
       include_fields :title,  :title_description, :product_title,
       :product_description, :thickness, :width, :length, :wood_species,
       :surface, :moisture_content, :grades_strenght, :packing, :produced_by,
@@ -63,26 +63,26 @@ RailsAdmin.config do |config|
     end
 
     config.model SawnSlider do
-      navigation_label "sawn Slider"
-      label "Слайдер"
+      navigation_label "Sawntimber"
+      label "Slider"
       include_fields :image, :show
     end
 
     config.model WhoWeAre do
-      navigation_label "info"
-      label "Who we are"
+      navigation_label "Who we are"
+      label "Information"
       include_fields :title, :description
     end
 
     config.model Location do
-      navigation_label "info"
-      label "Location"
+      navigation_label "Location"
+      label "Information"
       include_fields :title, :description
     end
 
     config.model Kvh do
-      navigation_label "Information"
-      label "KVH"
+      navigation_label "KVH"
+      label "Information"
       include_fields :title, :title_description, :product_title,
       :product_description, :wood_species, :manufacture,
       :sorting, :grading_category, :gluing, :quality, :packaging,
@@ -90,23 +90,54 @@ RailsAdmin.config do |config|
     end
 
     config.model WhoWeAreSlider do
-      navigation_label "Who we are Slider"
-      label "Слайдер"
+      navigation_label "Who we are"
+      label "Slider"
       include_fields :image, :show
     end
 
     config.model KvhSlider do
-      navigation_label "KVH Slider"
-      label "Слайдер"
+      navigation_label "KVH"
+      label "Slider"
       include_fields :image, :show
     end
 
     config.model Certificates do
       navigation_label "Certificates"
-      label "Info"
+      label "Information"
       include_fields :main_title, :left_image, :left_title,
       :left_description, :centre_image, :centre_title,
       :centre_description, :right_image, :right_title, :right_description
+    end
+
+    config.model OurProducts do
+      navigation_label "Our Products"
+      label "Information"
+      include_fields :main_title, :main_image, :left_title,
+      :left_description, :left_image, :centre_image,
+      :centre_title, :centre_description, :right_title,
+      :right_description, :right_image
+    end
+
+   config.model Contacts do
+      navigation_label "Contacts"
+      label "Information"
+      include_fields :title, :first_number,
+      :second_number, :e_mail, :address,
+      :image
+    end
+
+   config.model ContactUs do
+      navigation_label "Contacts us"
+      label "Information"
+      include_fields :title, :name, :e_mail,
+      :message
+    end
+
+   config.model Representative do
+      navigation_label "Representative in EU"
+      label "Information"
+      include_fields :title, :description, :image,:right_title,
+      :name, :e_mail, :message
     end
 
   end

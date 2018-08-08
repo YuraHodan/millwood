@@ -27,7 +27,7 @@
 
  def oneproducterssawn
  	@sawntimber = Sawntimber.first_or_initialize
- 	@sawmtimber_slider = SawntimberSlider.all.show
+ 	@sawmtimber_slider = SawnSlider.all.show
  end
 
  def company
@@ -36,7 +36,21 @@
 
  def message
   # binding.pry
-   # Message.create(name: params[:name],email: params[:email],message: params[:message])
+  @mesagge = Message.create(name: params[:name],email: params[:email],message: params[:message])
   render json: {}
  end
+
+ def producters
+  @producte = OurProducts.first_or_initialize
+ end
+
+ def contacts
+  @contacts = Contacts.first_or_initialize
+ end
+
+ def representative
+  @representative = Representative.first_or_initialize
+ end
+
+
 end

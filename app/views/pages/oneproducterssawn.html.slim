@@ -20,69 +20,62 @@
           .mainlidet.goode2
             ul.goode2-slider-for
             ul.goode2-slider-nav
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/img/Sawn_timber_slider.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/img/Sawn_timber_slider.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/img/location.jpg')})"
-              li
-                  .img-bg style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
+             -@sawmtimber_slider.each do|slide|
+               li
+                   .img-bg style="background-image: url(#{slide.image.url})" 
       .large-5.columns.medium-6.small-12.nopadding-ri.float-left
         .text-wrapper
           .tex-about
             .logo-wrapper
                 .logo = inline_svg "photo/svg/logogrey.svg"
                 .logo2 = inline_svg "photo/svg/logogrey.svg"
-            .title Sawn timber
+            .title =@sawntimber.title
             .text
-                p We offer highly accurate size tolerances of sawn timber from log wood through processing in the sawmill. Sawn timber is visually graded and available fresh, technically dried or four sides planed (S4S) which mostly used in construction industry, finishing and furniture manufacture. Our sawmill is FSC® Certified.
+                =@sawntimber.title_description
   .data-table
     .large-12.columns.medium-12
       .title-header
-        .title Product description
+        .title =@sawntimber.product_title
         .smol-title
-          p We offer highly accurate size tolerances of sawn timber from log wood through processing in the sawmill.
+          p =@sawntimber.product_description
     .large-9.columns.medium-12.centered
       .tables
         .tables-text
           table#customers
             tr
               td.first Thickness (mm)
-              td.second 20–140
+              td.second =@sawntimber.thickness
             tr
               td.first Width (mm)
-              td.second 50–200
+              td.second =@sawntimber.width
             tr
               td.first Length (m)
-              td.second 2.0–6.0
+              td.second =@sawntimber.length
             tr
               td.first Wood species
-              td.second Spruce (Picea abies) and Fir (Abies Alba)
+              td.second =@sawntimber.wood_species
             tr
               td.first Surface
-              td.second Rough sawn, planed
+              td.second =@sawntimber.surface
             tr
               td.first Moisture content (%)
-              td.second 12%–18%
+              td.second =@sawntimber.moisture_content
             tr
               td.first Grades Strength grading
-              td.second A, B, C S7, S10, S13
+              td.second =@sawntimber.grades_strenght
             tr
               td.first Packing
-              td.second LP, covered or without cover
+              td.second =@sawntimber.packing
             tr
               td.first Produced by
-              td.second Millwood, Ukraine
+              td.second =@sawntimber.produced_by
         .photo
           .photo-wrapper
-            .img-bg style="background-image: url(#{asset_path('photo/img/sawn_timber_table.jpg')})"
+            .img-bg style="background-image: url(#{@sawntimber.table_image})"
           .text-photo
-            .title We offer highly
+            .title =@sawntimber.table_image_title
             .text
-              p We offer highly accurate size tolerances of sawn timber from log wood through processing in the sawmill.
+              p =@sawntimber.table_image_description
   .lower-image-wrapper.columns.nopadding
       .lower-image
         .img-bg style="background-image: url(#{asset_path('photo/img/bgproduct1_.png')})"

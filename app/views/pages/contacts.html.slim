@@ -6,7 +6,7 @@
       a.Breadcrumbs-one href=root_path
         p Home /
       a.Breadcrumbs-second
-        p Contacts
+        p =@contacts.title
   .whoweare-bg
     .large-12.columns.medium-12
       .large-5.columns.medium-6.small-12.nopadding-ri.float-left
@@ -21,19 +21,19 @@
                 tr
                   td = inline_svg "photo/svg/phone.svg"
                   td
-                    | +380 34 776 1135
+                    =@contacts.first_number
                     br
-                    |+380 50 373 0203
+                    =@contacts.second_number
                 tr
                   td = inline_svg "photo/svg/mail.svg"
-                  td millwod@gmail.com
+                  td =@contacts.e_mail
                 tr
                   td = inline_svg "photo/svg/location.svg"
-                  td Millwood Ukraine 4 Zavodska str., Vyhoda, Ivano-Frankivsk region, Ukraine, 77552
+                  td =@contacts.address
       .large-7.columns.medium-6.small-12.float-right
         .title-about
         .Contact-us
-          .img-bg style="background-image: url(#{asset_path('photo/img/Representative_.jpg')})"
+          .img-bg style="background-image: url(#{@contacts.image})"
             .form-wrapper
               .Contact-us-title Contact us:
 
