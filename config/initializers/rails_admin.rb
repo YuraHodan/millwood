@@ -38,7 +38,7 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
    config.included_models = [MainSlider,Sawntimber,Company,SawnSlider,WhoWeAre,Location,Kvh,WhoWeAreSlider,
-    KvhSlider,Certificates,OurProducts,Contacts,Representative]
+    KvhSlider,Certificates,OurProducts,Contacts,Representative,ContactUs,FooterInfo,LocationSlider]
 
     config.model MainSlider do
       navigation_label "Main Slider"
@@ -129,17 +129,29 @@ RailsAdmin.config do |config|
    config.model ContactUs do
       navigation_label "Contacts us"
       label "Information"
-      include_fields :title, :name, :e_mail,
+      include_fields :title, :name, :email,
       :message
     end
 
    config.model Representative do
       navigation_label "Representative in EU"
       label "Information"
-      include_fields :title, :description, :image,:right_title,
-      :name, :e_mail, :message
+      include_fields :title, :description, :image,:right_title
     end
 
+    config.model FooterInfo do
+      navigation_label "Footer contacts"
+      label "Information"
+      include_fields :main_description, :first_certificate,
+      :second_certificate, :third_certificate, :first_number,
+      :second_number, :third_number, :address
+    end
+
+    config.model LocationSlider do
+      navigation_label "Location"
+      label "Slider"
+      include_fields :image, :show
+    end
   end
 end
 
