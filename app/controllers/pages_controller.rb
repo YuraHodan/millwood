@@ -1,5 +1,4 @@
  class PagesController < ApplicationController
-  before_action :info
 
   def index
     @slider_images = MainSlider.all.show
@@ -19,11 +18,11 @@
   end
 
  def sertificaters
-	@sertificate = Certificates.first_or_initialize
  end
 
  def locations
  	@location = Location.first_or_initialize
+  @location_slider = LocationSlider.all.show
  end
 
  def oneproducterssawn
@@ -37,7 +36,7 @@
 
  def message
   # binding.pry
-  @mesagge = Message.create(name: params[:name],email: params[:email],message: params[:message])
+  @mesagge = ContactUs.create(name: params[:name],email: params[:email],message: params[:message])
   render json: {}
  end
 
@@ -51,10 +50,5 @@
 
  def representative
   @representative = Representative.first_or_initialize
- end
- private
-
- def info
-  @huy = Pizda.first_or_initialize
  end
 end

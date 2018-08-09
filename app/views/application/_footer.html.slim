@@ -35,21 +35,26 @@
               a.title href=sertificaters_path Certificates
               ul
                 li
-                  a href=sertificaters_path FSC
+                  a href=sertificaters_path #{@sertificate.left_title}
                 li
-                  a href=sertificaters_path EN 15497
+                  a href=sertificaters_path #{@sertificate.centre_title}
                 li
-                  a href=sertificaters_path EN 15497
+                  a href=sertificaters_path #{@sertificate.right_title}
           .large-6.columns.medium-6.small-6
             .Contacts
               a.title href=contacts_path Contacts
               ul
                 li.Contacts-phone
                   ul
-                    li
-                      a +380 34 776 1135
-                    li
-                      a +380 50 373 0203
+                    -if @footer.first_number?
+                      li
+                        a =@footer.first_number
+                    -if @footer.second_number?
+                      li
+                        a =@footer.second_number
+                    -if @footer.third_number?
+                      li
+                        a =@footer.third_number
                 li.Contacts-text
                   | Millwood Ukraine 4 Zavodska str., Vyhoda, Ivano-Frankivsk region, Ukraine, 77552
   .lower-footer.columns

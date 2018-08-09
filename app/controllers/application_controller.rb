@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  before_action :info
+
   # include ActionView::Helpers::OutputSafetyHelper
   # include ActionView::Helpers::AssetUrlHelper
   # include ActionView::Helpers::TagHelper
@@ -15,4 +17,10 @@ class ApplicationController < ActionController::Base
   def render_not_found
     render template: "errors/not_found.html.slim"
   end
+  private
+
+   def info
+    @footer = FooterInfo.first_or_initialize
+    @sertificate = Certificates.first_or_initialize
+   end
 end

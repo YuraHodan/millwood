@@ -3,7 +3,7 @@ class CreateContactUs < ActiveRecord::Migration
     create_table :contact_us do |t|
     	t.string :title
     	t.string :name
-    	t.string :e_mail
+    	t.string :email
     	t.text   :message
     end
   end
