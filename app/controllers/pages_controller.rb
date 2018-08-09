@@ -36,7 +36,7 @@
 
  def message
   # binding.pry
-  @mesagge = ContactUs.create(name: params[:name],email: params[:email],message: params[:message])
+  @mesagge = ContactUs.create(name: params[:name],e_mail: params[:email],message: params[:message])
   render json: {}
  end
 
