@@ -1,4 +1,5 @@
  class PagesController < ApplicationController
+  before_action :info
 
   def index
     @slider_images = MainSlider.all.show
@@ -51,6 +52,9 @@
  def representative
   @representative = Representative.first_or_initialize
  end
+ private
 
-
+ def info
+  @huy = Pizda.first_or_initialize
+ end
 end

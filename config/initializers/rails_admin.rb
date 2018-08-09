@@ -37,7 +37,7 @@ RailsAdmin.config do |config|
     ## With an audit adapter, you can add:
     # history_index
     # history_show
-   config.included_models = [MainSlider,Sawntimber,Company,SawnSlider,WhoWeAre,Location,Kvh,WhoWeAreSlider,
+   config.included_models = [ContactUs,MainSlider,Sawntimber,Company,SawnSlider,WhoWeAre,Location,Kvh,WhoWeAreSlider,
     KvhSlider,Certificates,OurProducts,Contacts,Representative]
 
     config.model MainSlider do
@@ -136,10 +136,8 @@ RailsAdmin.config do |config|
    config.model Representative do
       navigation_label "Representative in EU"
       label "Information"
-      include_fields :title, :description, :image,:right_title,
-      :name, :e_mail, :message
+      include_fields :title, :description, :image,:right_title
     end
-
   end
 end
 
