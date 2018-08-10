@@ -1,5 +1,5 @@
  class PagesController < ApplicationController
-
+   
   def index
     @slider_images = MainSlider.all.show
   end
@@ -36,7 +36,12 @@
 
  def message
   # binding.pry
-  @mesagge = ContactUs.create(name: params[:name],e_mail: params[:email],message: params[:message])
+  #@mesagge = ContactUs.create(name: params[:name],email: params[:email],message: params[:message])
+  @message = ContactUs.new
+  @message.name = params[:name]
+  @message.email = params[:email]
+  @message.message = params[:message]
+  @message.save
   render json: {}
  end
 

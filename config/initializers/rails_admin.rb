@@ -129,7 +129,7 @@ RailsAdmin.config do |config|
    config.model ContactUs do
       navigation_label "Contacts us"
       label "Information"
-      include_fields :title, :name, :e_mail,
+      include_fields :title, :name, :email,
       :message
     end
 
