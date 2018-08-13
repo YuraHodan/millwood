@@ -139,7 +139,8 @@ Devise.setup do |config|
   # config.confirm_within = 3.days
 
   # If true, requires any email changes to be confirmed (exactly the same way as
- config.secret_key = '1d06dbd04559396ac3bdfd704e439566a574978a1227c91b1213d55684b1d75df7878686909704e06586c756089b5692a29f7996ef33016c9e683da6a11abec1'
+ config.secret_key = '
+e86da9dc9a30de740e19f4abae4be9f4b74a1e889a3307538438d8383756ef7550377822d2ad1bb16644dd25365a47911810a837f2199c97c9e4407f385ba823'
   # db field (see migrations). Until confirmed, new email is stored in
   # unconfirmed_email column, and copied to email column on successful confirmation.
   config.reconfirmable = true
