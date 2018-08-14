@@ -37,7 +37,7 @@ RailsAdmin.config do |config|
     ## With an audit adapter, you can add:
     # history_index
     # history_show
-   config.included_models = [FooterInfo,ContactUs,MainSlider,Sawntimber,Company,SawnSlider,WhoWeAre,Location,Kvh,WhoWeAreSlider,
+   config.included_models = [LocationSlider,FooterInfo,ContactUs,MainSlider,Sawntimber,Company,SawnSlider,WhoWeAre,Location,Kvh,WhoWeAreSlider,
     KvhSlider,Certificates,OurProducts,Contacts,Representative]
 
     config.model MainSlider do
