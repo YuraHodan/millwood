@@ -137,7 +137,7 @@ Devise.setup do |config|
   # Default is nil, meaning there is no restriction on how long a user can take
   # before confirming their account.
   # config.confirm_within = 3.days
-config.secret_key = '3f6e55fc1a7999b9bbfda5c97b5b97bb7ecb1da5c3149e03e20ab891d5b67299b0d9cfdc3e43a0e801ffd308d17e567ed0baab04de08ac85726fb68418820228' 
+config.secret_key = 'b914f47a1d02234b0959fa926ca4a68bd913af7cf852a5aadfe2769a96357bd2f6d3a2d411a296d6708758fb254d3aa640f3ad2dc57ed296ada068735e6f557d' 
   # If true, requires any email changes to be confirmed (exactly the same way as
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
   # db field (see migrations). Until confirmed, new email is stored in
