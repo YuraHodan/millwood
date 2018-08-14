@@ -9,7 +9,7 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'c1b5110a3d102ae8e7de879a3c899c26c42c730acfae31bea9f3899c1561a7f0c2acef358f288a5fa63318e5fd286b2430449b3410156d92c35e1cadda26e057'
-  
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -137,7 +137,8 @@ Devise.setup do |config|
   # Default is nil, meaning there is no restriction on how long a user can take
   # before confirming their account.
   # config.confirm_within = 3.days
-config.secret_key = 'e86da9dc9a30de740e19f4abae4be9f4b74a1e889a3307538438d8383756ef7550377822d2ad1bb16644dd25365a47911810a837f2199c97c9e4407f385ba823'
+# config.secret_key = 'e86da9dc9a30de740e19f4abae4be9f4b74a1e889a3307538438d8383756ef7550377822d2ad1bb16644dd25365a47911810a837f2199c97c9e4407f385ba823'
+config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
   # If true, requires any email changes to be confirmed (exactly the same way as
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
   # db field (see migrations). Until confirmed, new email is stored in
