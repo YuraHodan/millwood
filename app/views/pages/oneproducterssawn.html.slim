@@ -22,7 +22,7 @@
             ul.goode2-slider-nav
              -@sawmtimber_slider.each do|slide|
                li
-                   .img-bg style="background-image: url(#{slide.image.url})" 
+                   .img-bg style="background-image: url(#{slide.image.url})"
       .large-5.columns.medium-6.small-12.nopadding-ri.float-left
         .text-wrapper
           .tex-about
@@ -61,12 +61,12 @@
               td.first Moisture content (%)
               td.second =@sawntimber.moisture_content
             tr
-              td.first Grades 
+              td.first Grades
               td.second =@sawntimber.grades
             tr
               td.first Strength grading
               td.second =@sawntimber.strength_grading
-            tr            
+            tr
               td.first Packing
               td.second =@sawntimber.packing
             tr
@@ -75,8 +75,8 @@
         .photo
           .photo-wrapper
             .img-bg style="background-image: url(#{@sawntimber.table_image})"
-          .text-photo
-            .title =@sawntimber.table_image_title
+          .text-photo.color
+            .title.color =@sawntimber.table_image_title
             .text
               p =@sawntimber.table_image_description
   .lower-image-wrapper.columns.nopadding
