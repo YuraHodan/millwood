@@ -11,7 +11,8 @@ class CreateSawntimber < ActiveRecord::Migration
       t.string :wood_species
       t.string :surface
       t.string :moisture_content
-      t.string :grades_strenght
+      t.string :grades
+      t.string :strength_grading
       t.string :packing
       t.string :produced_by
       t.string :table_image
