@@ -3,7 +3,7 @@ class UserMailer < ApplicationMailer
 
  def consultation_email(consultation)
    @message = consultation
-   mail(to: "eduard.m@voroninstudio.eu", subject: 'Питання')
+   mail(to: "i.bukhanevych@millwood.com.ua ", subject: 'Питання')
  end
 
 end

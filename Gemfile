@@ -101,3 +101,6 @@ gem 'puma'
 group :test, :development do
   #gem 'mail_view', git: 'git://github.com/37signals/mail_view.git', ref: '6a4bc7f01a'
 end
+
+gem 'mini_magick'
+gem 'carrierwave-imageoptimizer'
