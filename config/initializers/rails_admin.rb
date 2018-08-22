@@ -51,7 +51,7 @@ RailsAdmin.config do |config|
       label "Product"
       include_fields :title,  :title_description, :product_title,
       :product_description, :thickness, :width, :length, :wood_species,
-      :surface, :moisture_content, :grading, :strength_grading, :packing, :produced_by,
+      :surface, :moisture_content, :strength_grading, :packing, :produced_by,
       :table_image, :table_image_title, :table_image_description
     end
 
