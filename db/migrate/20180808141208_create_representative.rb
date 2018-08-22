@@ -2,8 +2,7 @@ class CreateRepresentative < ActiveRecord::Migration
   def change
     create_table :representatives do |t|
     	t.string :title
-    	t.text   :description
-    	t.text   :name
+    	t.text   :description    	
     	t.text   :address
     	t.text   :contact_number
     	t.string :image
