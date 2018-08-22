@@ -49,10 +49,11 @@ RailsAdmin.config do |config|
     config.model Sawntimber do
       navigation_label "Sawntimber"
       label "Product"
-      include_fields :title,  :title_description, :product_title,
-      :product_description, :thickness, :width, :length, :wood_species,
-      :surface, :moisture_content, :strength_grading, :packing, :produced_by,
-      :table_image, :table_image_title, :table_image_description
+      include_fields :title, :title_description, :product_title,
+       :product_description, :thickness, :width,
+       :length, :wood_species, :surface, :moisture_content,
+       :grades_strenght, :packing, :produced_by, :table_image,
+       :table_image_title, :table_image_description
     end
 
     config.model Company do
