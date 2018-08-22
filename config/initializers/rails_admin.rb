@@ -51,7 +51,7 @@ RailsAdmin.config do |config|
       label "Product"
       include_fields :title,  :title_description, :product_title,
       :product_description, :thickness, :width, :length, :wood_species,
-      :surface, :moisture_content, :grades, :strength_grading, :packing, :produced_by,
+      :surface, :moisture_content, :grade, :strength_grading, :packing, :produced_by,
       :table_image, :table_image_title, :table_image_description
     end
 
@@ -136,7 +136,7 @@ RailsAdmin.config do |config|
    config.model Representative do
       navigation_label "Representative in EU"
       label "Information"
-      include_fields :title, :description, :names,
+      include_fields :title, :description, :name,
       :address, :contact_number, :image,:right_title
     end
 
