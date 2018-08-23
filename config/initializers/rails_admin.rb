@@ -138,7 +138,7 @@ RailsAdmin.config do |config|
       navigation_label "Representative in EU"
       label "Information"
       include_fields :title, :description,
-      :image, :right_title
+      :image, :right_title, :name, :address, :tel_number
     end
 
     config.model FooterInfo do
