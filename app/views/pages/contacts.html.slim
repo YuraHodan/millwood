@@ -29,9 +29,8 @@
                   td =@contacts.e_mail
                 tr
                   td = inline_svg "photo/svg/location.svg"
-                  td =@contacts.address
-                / a.lox href="https://www.w3schools.com"  Visit W3Schools
-                    / | 48°55'54.5"N  23°54'58.5"E
+                  td
+                    a href="https://goo.gl/maps/5kNFA5TiLvK2" =@contacts.address
       .large-7.columns.medium-6.small-12.float-right
         .title-about
         .Contact-us
