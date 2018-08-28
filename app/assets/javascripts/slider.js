@@ -14,7 +14,7 @@ $('.goode2-slider-nav').slick({
  speed: 500,
  fade: true,
  autoplay: true,
- autoplaySpeed: 7000,
+ autoplaySpeed: 3000,
  nextArrow: false,
  prevArrow: false,
  cssEase: 'linear'
@@ -39,7 +39,7 @@ $('.goode-slider-nav').slick({
  // speed: 500,
  // fade: true,
  autoplay: true,
- autoplaySpeed: 7000,
+ autoplaySpeed: 3000,
  // nextArrow: false,
  // prevArrow: false,
  // cssEase: 'linear',
@@ -56,7 +56,7 @@ $('.goode-slider-nav').slick({
      speed: 500,
      fade: true,
      autoplay: false,
-     autoplaySpeed: 2000,
+     autoplaySpeed: 3000,
      nextArrow: false,
      prevArrow: false,
      cssEase: 'linear'
