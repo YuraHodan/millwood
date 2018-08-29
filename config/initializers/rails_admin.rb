@@ -57,8 +57,8 @@ RailsAdmin.config do |config|
     end
 
     config.model Company do
-      navigation_label "About us"
-      label "Company"
+      navigation_label "Company"
+      label "Information"
       include_fields :main_title, :main_image, :left_image, :left_title, :title_description, :middle_title,
       :middle_description, :middle_image, :right_image, :right_title, :right_description
     end
@@ -124,7 +124,7 @@ RailsAdmin.config do |config|
       label "Information"
       include_fields :title, :first_number,
       :second_number, :e_mail, :address,
-      :image
+      :coordinates, :image
     end
 
    config.model ContactUs do
@@ -138,7 +138,8 @@ RailsAdmin.config do |config|
       navigation_label "Representative in EU"
       label "Information"
       include_fields :title, :description,
-      :image, :right_title, :name, :address, :tel_number
+      :image, :right_title, :intro, :name, :address,
+      :tel_number
     end
 
     config.model FooterInfo do
