@@ -17,7 +17,8 @@ $('.goode2-slider-nav').slick({
  autoplaySpeed: 3000,
  nextArrow: false,
  prevArrow: false,
- cssEase: 'linear'
+ cssEase: 'linear',
+ pauseOnHover:false
 });
 
 
