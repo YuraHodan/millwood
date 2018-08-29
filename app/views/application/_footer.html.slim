@@ -48,13 +48,13 @@
                   ul
                     -if @footer.first_number?
                       li
-                        a =@footer.first_number
+                        a.no-line =@footer.first_number
                     -if @footer.second_number?
                       li
-                        a =@footer.second_number
+                        a.no-line =@footer.second_number
                     -if @footer.third_number?
                       li
-                        a =@footer.third_number
+                        a.no-line =@footer.third_number
                 li.Contacts-text
                   =@footer.address
   .lower-footer.columns
