@@ -86,7 +86,7 @@ RailsAdmin.config do |config|
       label "Information"
       include_fields :title, :title_description, :product_title,
       :product_description, :wood_species, :manufacture,
-      :sorting, :grading_category, :gluing, :quality, :packaging,
+      :sorting, :grading_category, :Strength, :gluing, :quality, :packaging,
       :lenght, :monitoring, :table_image, :table_image_title, :table_image_description
     end
 
