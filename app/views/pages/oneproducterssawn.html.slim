@@ -38,7 +38,7 @@
         .title =@sawntimber.product_title
         .smol-title
           p =@sawntimber.product_description
-    .large-9.columns.medium-12.centered
+    .large-12.columns.medium-12.centered
       .tables
         .tables-text
           table#customers
@@ -72,9 +72,9 @@
             tr
               td.first Produced by
               td.second =@sawntimber.produced_by
-        .photo
-          .photo-wrapper.long
-            .img-bg.long style="background-image: url(#{@sawntimber.table_image})"
+        / .photo
+        /   .photo-wrapper.long
+        /     .img-bg.long style="background-image: url(#{@sawntimber.table_image})"
           / .text-photo.color
           /   .title.color =@sawntimber.table_image_title
           /   .text
