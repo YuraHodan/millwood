@@ -52,14 +52,14 @@
               td.first Sorting:
               td.second =@kvh.sorting
             tr
-              td.first.tu-in-one
-                |Grading:
-                br
-                  |Strength grading:
-              td.second.tu-in-one
+              td.first
+                |Strength class:
+                / br
+                /   |Strength grading:
+              td.second
                 =@kvh.grading_category
-                br
-                  =@kvh.Strength
+                / br
+                /   =@kvh.Strength
             tr
               td.first Gluing:
               td.second =@kvh.gluing
