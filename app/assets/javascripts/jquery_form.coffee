@@ -11,5 +11,9 @@ $document.on 'submit', 'form.ajax-form', (e)->
 			# 	$('body').removeClass('opened-popup')
 			# 	), 2000
 			# $(this)[0].reset();
-			document.location.reload(true);
+			$(".name-btn").text("Message was sent")
+			# document.location.reload(true);
+			setTimeout ( ->
+  		document.location.reload(true);
+			), 2000
 	})
