@@ -15,5 +15,5 @@ $document.on 'submit', 'form.ajax-form', (e)->
 			# document.location.reload(true);
 			setTimeout ( ->
   		document.location.reload(true);
-			), 2000
+			), 3000
 	})
