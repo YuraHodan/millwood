@@ -21,39 +21,48 @@
  end
 
  def locations
- 	@location = Location.first_or_initialize
-  @location_slider = LocationSlider.all.show
+  	@location = Location.first_or_initialize
+   @location_slider = LocationSlider.all.show
  end
 
  def oneproducterssawn
- 	@sawntimber = Sawntimber.first_or_initialize
- 	@sawmtimber_slider = SawnSlider.all.show
+  	@sawntimber = Sawntimber.first_or_initialize
+ 	 @sawmtimber_slider = SawnSlider.all.show
  end
 
  def company
- 	@company = Company.first_or_initialize
+  	@company = Company.first_or_initialize
  end
 
  def message
-  # binding.pry
-  #@mesagge = ContactUs.create(name: params[:name],email: params[:email],message: params[:message])
-  @message = ContactUs.new
-  @message.name = params[:name]
-  @message.email = params[:email]
-  @message.message = params[:message]
-  @message.save
-  render json: {}
+   # binding.pry
+   #@mesagge = ContactUs.create(name: params[:name],email: params[:email],message: params[:message])
+   @message = ContactUs.new
+   @message.name = params[:name]
+   @message.email = params[:email]
+   @message.message = params[:message]
+   @message.save
+   render json: {}
  end
 
  def producters
-  @producte = OurProducts.first_or_initialize
+   @producte = OurProducts.first_or_initialize
  end
 
  def contacts
-  @contacts = Contacts.first_or_initialize
+   @contacts = Contacts.first_or_initialize
  end
 
  def representative
-  @representative = Representative.first_or_initialize
+   @representative = Representative.first_or_initialize
+ end
+
+ def question
+   @question = Question.new
+   @question.name = params[:name]
+   @question.email = params[:email]
+   @question.message = params[:message]
+   @question.save
+   render json: {}
  end
 end

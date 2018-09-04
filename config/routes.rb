@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     get "representative", action: "representative"
     get "contacts", action: "contacts"
     post "message", action: "message"
+    post "question", action: "question"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]
