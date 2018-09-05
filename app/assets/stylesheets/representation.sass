@@ -1,5 +1,7 @@
 .whoweare
   .content-wrapper
+    +breakpoint(small only)
+      font-size: 12px
     .contact-table
       tr
         td
@@ -29,6 +31,10 @@
           color: $white
           font-size: 36px
           padding: 95px 0 30px 0
+          +breakpoint(small only)
+            color: $green
+            font-size: 22px
+            padding: 50px 0 30px 0
         .contact-us-wrap
           .form-container
             .inner-form

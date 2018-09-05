@@ -52,41 +52,41 @@
   .all-of-company-smole
     .columnss.bg
       .font-columnss
-        .img-bg style="background-image: url(#{asset_path('photo/img/company.jpg')})"
+        .img-bg style="background-image: url(#{@company.main_image})"
           .text-columnss
-            p Company
+            p =@company.main_title
   .large-12.columns.medium-12
     .all-of-company-smole-all
       .columnss.small
         .font-columnss
-          .img-bg style="background-image: url(#{asset_path('photo/img/whoweare_small.jpg')})"
+          .img-bg style="background-image: url(#{@company.left_image})"
         .bg-text-columnss.green
           .text-wrapper href=whoweare_path
-            .title Who we are
+            .title =@company.left_title
             .text
-              p Millwood specializes in manufacturing a wide range of sawn timber
+              p =@company.title_description
           .read-more
             a.text href=whoweare_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
       .columnss.small
         .bg-text-columnss
           .text-wrapper href=locations_path
-            .title Location
+            .title =@company.middle_title
             .text
-              p The geographical location is advantage for the sawmill compan
+              p =@company.middle_description
           .read-more
             a.text href=locations_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
         .font-columnss
-          .img-bg style="background-image: url(#{asset_path('photo/img/location.jpg')})"
+          .img-bg style="background-image: url(#{@company.middle_image})"
       .columnss.small
         .font-columnss
-          .img-bg style="background-image: url(#{asset_path('photo/img/representative_small.jpg')})"
+          .img-bg style="background-image: url(#{@company.right_image})"
         .bg-text-columnss
           .text-wrapper href=representative_path
-            .title Representative in EU
+            .title =@company.right_title
             .text
-              p Потрібен текст! Planed product provides the special.
+              p =@company.right_description
           .read-more
             a.text href=representative_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"

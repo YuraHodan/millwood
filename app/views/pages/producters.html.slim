@@ -13,7 +13,7 @@
         .font-columnss
           .img-bg style="background-image: url(#{@producte.main_image})"
             .text-columnss
-              p =@producte.main_title 
+              p =@producte.main_title
       .columnss.small
         a.bg-text-columnss.midle href=oneproducterssawn_path
           .text-wrapper
@@ -51,41 +51,41 @@
   .all-of-company-smole
     .columnss.bg
       .font-columnss
-        .img-bg style="background-image: url(#{asset_path('photo/img/ourproducts_.png')})"
+        .img-bg style="background-image: url(#{@producte.main_image})"
           .text-columnss
-            p  Our Products
+            p =@producte.main_title
   .large-12.columns.medium-12
     .all-of-company-smole-all
       .columnss.small
         .font-columnss
-          .img-bg style="background-image: url(#{asset_path('photo/img/sawntimber_small.jpg')})"
+          .img-bg style="background-image: url(#{@producte.left_image})"
         .bg-text-columnss.mobile
           .text-wrapper
-            .title Sawn Timber
+            .title =@producte.left_title
             .text
-              p Sawn timber is the basic product produced from log wood through processing in the sawmill
+              p =@producte.left_description
           .read-more
             a.text href=oneproducterssawn_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
       .columnss.small
         .bg-text-columnss.mobile
           .text-wrapper
-            .title Structural finger jointed Solid Timber (KVH)
+            .title =@producte.centre_title
             .text
-              p KVH has become an indispensable material for modern wood construction
+              p =@producte.centre_description
           .read-more
             a.text href=productkvh_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
         .font-columnss
-          .img-bg style="background-image: url(#{asset_path('photo/img/kvh_small.jpg')})"
+          .img-bg style="background-image: url(#{@producte.centre_image})"
       .columnss.small
         .font-columnss
-          .img-bg style="background-image: url(#{asset_path('photo/img/planedproducts.jpg')})"
+          .img-bg style="background-image: url(#{@producte.centre_image})"
         .bg-text-columnss.mobile
           .text-wrapper
-            .title Planed products
+            .title =@producte.right_title
             .text
-              p Planed product provides the special atmosphere of comfort, warmth and elegance into the house.
+              p =@producte.right_description
           .read-more
             / a.text read more
             / .arrow = inline_svg "photo/svg/arrowright.svg"
