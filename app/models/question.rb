@@ -1,6 +1,6 @@
 class Question < ActiveRecord::Base
   after_create :notify_admin
  def notify_admin
- 	UserMailer.consultation_email(self).deliver_now
+ 	 UserMailer.question_email(self).deliver_now
  end
 end
