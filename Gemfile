@@ -104,3 +104,4 @@ end
 
 gem 'mini_magick'
 gem 'carrierwave-imageoptimizer'
+gem 'figaro'
