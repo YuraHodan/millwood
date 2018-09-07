@@ -8,6 +8,6 @@ class UserMailer < ApplicationMailer
 
  def question_email(question)
    @question = question
-   mail(to: 'buchanevyc@modulwood.cz', subject: 'Питання')
+   mail(to: 'eduard.m@voroninstudio.eu', subject: 'Питання')
  end
 end

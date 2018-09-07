@@ -1,4 +1,4 @@
-doctype html
+<!-- doctype html
 html
   head
     meta[content="text/html; charset=UTF-8" http-equiv="Content-Type"]
@@ -10,4 +10,22 @@ html
     =@question.email
     br
     =@question.message
-  
+   -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body> 
+    <h3>
+      | Millwood питання</h3>
+    <%= @question.name %>
+    <p>
+    <%= @question.email %>
+    </p>
+    <p>
+    <%= @question.message %>
+    </p>
+  </body>
+</html>
