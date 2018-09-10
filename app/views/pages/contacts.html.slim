@@ -26,7 +26,9 @@
                     =@contacts.second_number
                 tr
                   td = inline_svg "photo/svg/mail.svg"
-                  td =@contacts.e_mail
+                  / td =@contacts.e_mail
+                  td
+                    a href="mailto:i.bukhanevych@millwood.com.ua " =@contacts.e_mail
                 tr
                   td = inline_svg "photo/svg/location.svg"
                   td

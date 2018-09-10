@@ -35,7 +35,7 @@
     ul
       li.sub-menu-parent tab-index="0"
         .text-sub
-          a.Company.sub-menu-parent  Company
+          a.Company.sub-menu-parent href=company_path  Company
           .swg-arrow = inline_svg "photo/svg/arrowdown.svg"
         ul.sub-menu
           li
@@ -44,9 +44,16 @@
             a href=locations_path Locations
           li
             a href=representative_path Representative in EU
-      li.sub-menu-parent tab-index="0"
-        a.Products.sub-menu-parent href=producters_path Products
-      li.sub-menu-parent tab-index="0"
+      li.sub-menu-parent tab-index="1"
+        .text-sub
+          a.Products.sub-menu-parent href=producters_path Products
+          .swg-arrow = inline_svg "photo/svg/arrowdown.svg"
+        ul.sub-menu
+          li
+            a href=oneproducterssawn_path Sawn Timber
+          li
+            a href=productkvh_path Structural Solid Timber (KVH)
+      li.sub-menu-parent tab-index="2"
         a.Certificates.sub-menu-parent href=sertificaters_path Certificates
-      li.sub-menu-parent tab-index="0"
+      li.sub-menu-parent tab-index="3"
          a.Contacts.sub-menu-parent href=contacts_path Contacts

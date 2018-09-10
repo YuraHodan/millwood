@@ -59,22 +59,22 @@
       .columnss.small
         .font-columnss
           .img-bg style="background-image: url(#{@producte.left_image})"
-        .bg-text-columnss.mobile
+        a.bg-text-columnss.mobile href=oneproducterssawn_path
           .text-wrapper
             .title =@producte.left_title
             .text
               p =@producte.left_description
           .read-more
-            a.text href=oneproducterssawn_path read more
+            .text read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
       .columnss.small
-        .bg-text-columnss.mobile
+        a.bg-text-columnss.mobile href=productkvh_path
           .text-wrapper
             .title =@producte.centre_title
             .text
               p =@producte.centre_description
           .read-more
-            a.text href=productkvh_path read more
+            .text href=productkvh_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
         .font-columnss
           .img-bg style="background-image: url(#{@producte.centre_image})"

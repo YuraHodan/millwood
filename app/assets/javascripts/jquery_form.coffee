@@ -12,8 +12,9 @@ $document.on 'submit', 'form.ajax-form', (e)->
 			# 	), 2000
 			# $(this)[0].reset();
 			$(".name-btn").text("Message was sent")
+			$(".name-bt2").text("Message was sent")
 			# document.location.reload(true);
 			setTimeout ( ->
   		document.location.reload(true);
-			), 3000
+			), 7000
 	})

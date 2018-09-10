@@ -60,33 +60,33 @@
       .columnss.small
         .font-columnss
           .img-bg style="background-image: url(#{@company.left_image})"
-        .bg-text-columnss.green
-          .text-wrapper href=whoweare_path
+        a.bg-text-columnss.green href=whoweare_path
+          .text-wrapper
             .title =@company.left_title
             .text
               p =@company.title_description
           .read-more
-            a.text href=whoweare_path read more
+            .text href=whoweare_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
       .columnss.small
-        .bg-text-columnss
-          .text-wrapper href=locations_path
+        a.bg-text-columnss href=locations_path
+          .text-wrapper
             .title =@company.middle_title
             .text
               p =@company.middle_description
           .read-more
-            a.text href=locations_path read more
+            .text href=locations_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
         .font-columnss
           .img-bg style="background-image: url(#{@company.middle_image})"
       .columnss.small
         .font-columnss
           .img-bg style="background-image: url(#{@company.right_image})"
-        .bg-text-columnss
-          .text-wrapper href=representative_path
+        a.bg-text-columnss href=representative_path
+          .text-wrapper
             .title =@company.right_title
             .text
               p =@company.right_description
           .read-more
-            a.text href=representative_path read more
+            .text href=representative_path read more
             .arrow = inline_svg "photo/svg/arrowright.svg"
