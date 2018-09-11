@@ -101,3 +101,13 @@ $( "#nav-icon" ).click(function() {
 // }
 //
 // setInterval(updateGradient,10);
+
+
+
+$(document).ready(function () {
+    $('#list > li').click(function (event) {
+        $(this).children("ul").slideToggle();
+				$(this).find( ".swg-arrow" ).css( "transform", "rotate(720deg)" );
+        event.stopPropagation();
+    });
+});

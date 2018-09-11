@@ -277,11 +277,15 @@
   .text-sub
     display: flex
     align-items: center
-    .swg-arrow
-      margin-left: 20px
-      svg
-        height: 10px
-        width: 15px
+    .svg-wrapper
+      position: absolute
+      right: 100px
+      .swg-arrow
+        transition: 1s
+        // margin-left: 20px
+        svg
+          height: 10px
+          width: 15px
   .Company, .Products, .Certificates, .Contacts
     color: $graytitle
     font-size: 16px
@@ -290,7 +294,7 @@
     padding: 0
     list-style: none
     position: relative
-    display: inline-block
+    // display: inline-block
     &.sub-menu
       padding-top: 15px
       li
@@ -321,14 +325,6 @@
   transform: translate(0, 0)
   pointer-events: initial
   padding: 20px 0
-.menuopen
-  overflow: hidden
-  position: fixed
-  // height: 100%
-  top: 0px
-  left: 0px
-  right: 0px
-  bottom: 0px
-svg
-  title
+
+  #list > li > ul
     display: none
