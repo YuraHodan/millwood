@@ -105,9 +105,21 @@ $( "#nav-icon" ).click(function() {
 
 
 $(document).ready(function () {
+		var svg = true
     $('#list > li').click(function (event) {
-        $(this).children("ul").slideToggle();
-				$(this).find( ".swg-arrow" ).css( "transform", "rotate(720deg)" );
+			if (svg == true) {
+				svg = false
+				$(this).children("ul").slideToggle();
+				$(this).find( ".swg-arrow" ).css( "transform", "rotate(900deg)" );
         event.stopPropagation();
+			}else {
+				svg = true
+				$(this).children("ul").slideToggle();
+				$(this).find( ".swg-arrow" ).css( "transform", "rotate(-720deg)" );
+        event.stopPropagation();
+			}
+        // $(this).children("ul").slideToggle();
+				// $(this).find( ".swg-arrow" ).css( "transform", "rotate(900deg)" );
+        // event.stopPropagation();
     });
 });
