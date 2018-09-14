@@ -106,7 +106,8 @@ $( "#nav-icon" ).click(function() {
 
 $(document).ready(function () {
 		var svg = true
-    $('#list > li').click(function (event) {
+		var svg2 = true
+    $('.clic1').click(function (event) {
 			if (svg == true) {
 				svg = false
 				$(this).children("ul").slideToggle();
@@ -118,8 +119,18 @@ $(document).ready(function () {
 				$(this).find( ".swg-arrow" ).css( "transform", "rotate(-720deg)" );
         event.stopPropagation();
 			}
-        // $(this).children("ul").slideToggle();
-				// $(this).find( ".swg-arrow" ).css( "transform", "rotate(900deg)" );
-        // event.stopPropagation();
     });
+		$('.clic2').click(function (event) {
+			if (svg2 == true) {
+				svg2 = false
+				$(this).children("ul").slideToggle();
+				$(this).find( ".swg-arrow2" ).css( "transform", "rotate(900deg)" );
+				event.stopPropagation();
+			}else {
+				svg2 = true
+				$(this).children("ul").slideToggle();
+				$(this).find( ".swg-arrow2" ).css( "transform", "rotate(-720deg)" );
+				event.stopPropagation();
+			}
+		});
 });
