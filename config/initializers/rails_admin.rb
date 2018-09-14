@@ -123,7 +123,7 @@ RailsAdmin.config do |config|
       navigation_label "Contacts"
       label "Information"
       include_fields :title, :first_number,
-      :second_number, :e_mail, :address,
+      :second_number, :e_mail, :second_mail, :address,
       :coordinates, :image
     end
 
